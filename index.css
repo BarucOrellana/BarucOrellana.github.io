@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    text-align: justify;
 }
 
 a {
@@ -26,14 +27,15 @@ h1, h2 {
     color: #333;
 }
 
+h3{
+    text-align: center;
+}
+
 p {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     font-size: 1.1em;
-}
-
-h3 {
-    text-align: center;
+    text-align: justify;
 }
 
 ul {
@@ -73,13 +75,13 @@ nav ul li a:hover {
 }
 
 .hero {
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background: linear-gradient(135deg, #2c2c54, #1a1a1a);
     text-align: center;
     position: relative;
+    padding-top: 150px;
 }
 
 .hero-content img {
@@ -179,7 +181,27 @@ h2 {
 }
 
 .projects p {
+    text-align: justify;
     color: #d1d1e0;
+}
+
+.lista {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.lista li{
+    font-weight: bolder;
+    list-style-type: none;
+    padding-left: 40%;
+}
+
+.lista li::before {
+    content: "●"; /* Añadir una esfera */
+    color: #3498db; /* Cambiar el color de la esfera */
+    font-size: 12px; /* Tamaño de la esfera */
+    margin-right: 10px; /* Espacio entre la esfera y el texto */
+    display: inline-block;
 }
 
 .btn {
@@ -190,7 +212,8 @@ h2 {
     text-transform: uppercase;
     font-weight: bold;
     border-radius: 5px;
-    transition: background 0.3s ease;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 .btn:hover {
